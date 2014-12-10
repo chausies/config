@@ -122,4 +122,4 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 
 alias shorten="PS1='\u:\W\$ '"
-alias sshberk="ssh cs199-afl@hive17.cs.berkeley.edu"
+alias sshberk="ssh cs199-afl@hive11.cs.berkeley.edu"
