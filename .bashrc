@@ -121,5 +121,9 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 
+# Shorten the prompt for the terminal
 alias shorten="PS1='\u:\W\$ '"
+# Make octave open without a banner
+alias octave="octave -q"
+# SSH into berkeley account
 alias sshberk="ssh cs199-afl@hive11.cs.berkeley.edu"
