@@ -127,3 +127,6 @@ alias shorten="PS1='\u:\W\$ '"
 alias octave="octave -q"
 # SSH into berkeley account
 alias sshberk="ssh cs199-afl@hive11.cs.berkeley.edu"
+
+# Use .pythonrc file
+export PYTHONSTARTUP=~/.pythonrc
