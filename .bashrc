@@ -127,6 +127,8 @@ alias shorten="PS1='\u:\W\$ '"
 alias octave="octave -q"
 # SSH into berkeley account
 alias sshberk="ssh cs199-afl@hive11.cs.berkeley.edu"
+# find the space taken up by a directory or file
+alias space="du -hs"
 
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
