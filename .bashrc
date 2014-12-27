@@ -129,6 +129,8 @@ alias octave="octave -q"
 alias sshberk="ssh cs199-afl@hive11.cs.berkeley.edu"
 # find the space taken up by a directory or file
 alias space="du -hs"
+# Open curr directory in file browser
+alias "open-dir"="xdg-open ."
 
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
