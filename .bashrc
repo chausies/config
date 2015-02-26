@@ -131,6 +131,17 @@ alias sshberk="ssh cs199-afl@hive11.cs.berkeley.edu"
 alias space="du -hs"
 # Open curr directory in file browser
 alias "open-dir"="xdg-open ."
+# Compile all coffeescript files
+alias "cfe"="coffee -c *.coffee"
 
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
+
+# Amazon junk
+export AWS_ACCESS_KEY_ID="AKIAISILFS4Y6TF7YIWA"
+export AWS_S3_BUCKET="magicgrader"
+export AWS_SECRET_ACCESS_KEY="gj01ds1SyknTdIgkCKNoLJOimc0VWogwnYomt604V"
+
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
