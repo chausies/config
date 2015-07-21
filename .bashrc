@@ -137,28 +137,6 @@ alias "cfe"="coffee -c *.coffee"
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
 
-# 'apt-history install' to see previously installed apps
-### pars for fun: install | remove | rollback
-function apt-history(){
-		case "$1" in
-		install)
-				grep 'install ' /var/log/dpkg.log
-				;;
-		upgrade|remove)
-				grep $1 /var/log/dpkg.log
-				;;
-		rollback)
-				grep upgrade /var/log/dpkg.log | \
-					grep "$2" -A10000000 | \
-					grep "$3" -B10000000 | \
-					awk '{print $4"="$5}'
-				;;
-		*)
-				cat /var/log/dpkg.log
-				;;
-		esac
-}
-
 # Amazon junk
 export AWS_ACCESS_KEY_ID="AKIAISILFS4Y6TF7YIWA"
 export AWS_S3_BUCKET="magicgrader"
