@@ -133,6 +133,8 @@ alias space="du -hs"
 alias "open-dir"="xdg-open ."
 # Compile all coffeescript files
 alias "cfe"="coffee -c *.coffee"
+# Use ncdu to see file sizes
+alias "filesize"="ncdu"
 
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
@@ -144,3 +146,5 @@ export AWS_SECRET_ACCESS_KEY="gj01ds1SyknTdIgkCKNoLJOimc0VWogwnYomt604V"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export PATH="$PATH:$HOME/bin"
