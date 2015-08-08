@@ -135,6 +135,8 @@ alias "open-dir"="xdg-open ."
 alias "cfe"="coffee -c *.coffee"
 # Use ncdu to see file sizes
 alias "filesize"="ncdu"
+# Shortcut for python doctest running
+alias "pytest"="python -m doctest"
 
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
