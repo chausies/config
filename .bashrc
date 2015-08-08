@@ -139,6 +139,9 @@ alias "filesize"="ncdu"
 alias "pytest"="python -m doctest"
 # Shortcut for running python interpreter and execfile on each passed file
 alias "pyrun"="python ~/configs/pyrun.py"
+# Using tcpcrypt to encrypt internet
+alias "start-tcpcrypt"="sudo sh ~/Downloads/tcpcrypt/user/launch_tcpcryptd.sh &"
+alias "stop-tcpcrypt"="sudo pkill tcpcryptd"
 
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
