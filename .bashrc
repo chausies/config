@@ -137,6 +137,8 @@ alias "cfe"="coffee -c *.coffee"
 alias "filesize"="ncdu"
 # Shortcut for python doctest running
 alias "pytest"="python -m doctest"
+# Shortcut for running python interpreter and execfile on each passed file
+alias "pyrun"="python ~/configs/pyrun.py"
 
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
