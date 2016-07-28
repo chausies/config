@@ -124,7 +124,7 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 # Shorten the prompt for the terminal
 alias shorten="PS1='\u:\W\$ '"
 # Make octave open without a banner
-alias octave="octave -q"
+alias octave="octave -q --no-gui"
 # SSH into berkeley account
 alias sshberk="ssh cs199-afl@hive11.cs.berkeley.edu"
 # find the space taken up by a directory or file
@@ -142,9 +142,12 @@ alias "pyrun"="python ~/configs/pyrun.py"
 # Using tcpcrypt to encrypt internet
 alias "start-tcpcrypt"="sudo sh ~/Downloads/tcpcrypt/user/launch_tcpcryptd.sh &"
 alias "stop-tcpcrypt"="sudo pkill tcpcryptd"
+# Run pip with sudo
+alias "pip"="sudo -H pip"
 
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
+
 
 # Amazon junk
 export AWS_ACCESS_KEY_ID="AKIAISILFS4Y6TF7YIWA"
