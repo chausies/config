@@ -148,6 +148,11 @@ alias "pip"="sudo -H pip"
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
 
+# Make github repo and add it as origin
+make_github_repo () {
+  curl -u 'chausies' https://api.github.com/user/repos -d "{\"name\":\"$1\"}"
+  git remote add origin git@github.com:chausies/$1.git
+}
 
 # Amazon junk
 export AWS_ACCESS_KEY_ID="AKIAISILFS4Y6TF7YIWA"
