@@ -137,8 +137,6 @@ alias "cfe"="coffee -c *.coffee"
 alias "filesize"="ncdu"
 # Shortcut for python doctest running
 alias "pytest"="python -m doctest"
-# Shortcut for running python interpreter and execfile on each passed file
-alias "pyrun"="python ~/configs/pyrun.py"
 # Using tcpcrypt to encrypt internet
 alias "start-tcpcrypt"="sudo sh ~/Downloads/tcpcrypt/user/launch_tcpcryptd.sh &"
 alias "stop-tcpcrypt"="sudo pkill tcpcryptd"
@@ -152,6 +150,19 @@ export PYTHONSTARTUP=~/.pythonrc
 make_github_repo () {
   curl -u 'chausies' https://api.github.com/user/repos -d "{\"name\":\"$1\"}"
   git remote add origin git@github.com:chausies/$1.git
+}
+
+# Shortcut for running python program and then openning the interpreter
+# afterwards with all of the variables available
+pyrun () {
+  cp $1 ".$1.pyrunfile.deletethis"
+  echo 'import code
+import readline
+import rlcompleter
+readline.parse_and_bind("tab: complete")
+code.interact(local=locals())' >> ".$1.pyrunfile.deletethis"
+  python ".$1.pyrunfile.deletethis"
+  rm ".$1.pyrunfile.deletethis"
 }
 
 # Amazon junk
