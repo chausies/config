@@ -1,3 +1,8 @@
+ln -s ~/configs/.mybashrc ~/
+ln -s ~/configs/.inputrc ~/
+ln -s ~/configs/.pythonrc ~/
+ln -s ~/configs/.gitconfig ~/
+
 # Get .bashrc to source .mybashrc if it isn't already
 if -Fxq "source ~/.mybashrc" ~/.bashrc
 then
@@ -10,7 +15,3 @@ source ~/.mybashrc
 
 EOT
 fi
-
-ln -s ~/configs/.inputrc ~/
-ln -s ~/configs/.pythonrc ~/
-ln -s ~/configs/.gitconfig ~/
