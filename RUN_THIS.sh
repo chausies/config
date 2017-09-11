@@ -4,7 +4,7 @@ ln -s ~/configs/.pythonrc ~/
 ln -s ~/configs/.gitconfig ~/
 
 # Get .bashrc to source .mybashrc if it isn't already
-if -Fxq "source ~/.mybashrc" ~/.bashrc
+if grep -Fxq "source ~/.mybashrc" ~/.bashrc
 then
 echo ".bashrc already sourcing .mybashrc"
 else
