@@ -39,6 +39,12 @@ sudo apt-get install vim-gtk-py2
 # removed fully. You may need to run things like 
 # `sudo apt-get remove OTHER_VIM_DISTRO`
 
+# Get vim configs from my git and install the various plugins specified
+# there
 cd ~/
 git clone https://github.com/chausies/.vim.git
 sh ~/.vim/RUN_THIS.sh
+
+
+# Install octave and relevant packages
+sudo apt-get install octave octave-optim
