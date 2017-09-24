@@ -12,6 +12,7 @@ sudo apt-get upgrade
 
 # Install useful packages
 sudo apt-get install cmake # useful for makefiles. Needed to install YouCompleteMe
+sudo apt-get install ffmpeg # important for a lot of video/image/audio things
 
 # install python2.7 and pip
 sudo apt-get install python-dev python-tk python-pip
