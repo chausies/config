@@ -20,6 +20,7 @@ sudo apt-get install python-dev python-tk python-pip
 sudo -H pip install --upgrade pip
 # Install important python packages
 sudo -H pip install matplotlib scipy
+sudo -H pip install -U scikit-learn
 # Install other python packages
 sudo -H pip install cvxpy progressbar2 youtube-dl
 
