@@ -19,13 +19,14 @@ sudo apt-get install python-dev python-tk python-pip
 # Update pip
 sudo -H pip install --upgrade pip
 # Install important python packages
-sudo -H pip install matplotlib scipy
+sudo -H pip install --upgrade matplotlib scipy
 # Install other python packages
-sudo -H pip install cvxpy progressbar2 youtube-dl
+sudo -H pip install --upgrade cvxpy progressbar2 youtube-dl tensorflow-gpu
 
 
 # Install LaTeX stuff (like pdflatex command)
 sudo apt-get install texlive
+sudo apt-get install texlive-latex-extra --no-install-recommends
 
 # Get custom configs
 cd ~
