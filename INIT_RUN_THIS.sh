@@ -19,9 +19,11 @@ sudo apt-get install python-dev python-tk python-pip
 # Update pip
 sudo -H pip install --upgrade pip
 # Install important python packages
-sudo -H pip install --upgrade matplotlib scipy
+sudo -H pip install matplotlib scipy
+sudo -H pip install -U scikit-learn
+sudo -H pip install tensorflow
 # Install other python packages
-sudo -H pip install --upgrade cvxpy progressbar2 youtube-dl tensorflow-gpu
+sudo -H pip install cvxpy progressbar2 youtube-dl
 
 
 # Install LaTeX stuff (like pdflatex command)
