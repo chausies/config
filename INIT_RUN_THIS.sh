@@ -22,6 +22,9 @@ sudo -H pip install --upgrade pip
 sudo -H pip install matplotlib scipy
 sudo -H pip install -U scikit-learn
 sudo -H pip install tensorflow
+sudo -H pip install h5py
+sudo -H pip install pydot
+sudo -H pip install keras
 # Install other python packages
 sudo -H pip install cvxpy progressbar2 youtube-dl
 
