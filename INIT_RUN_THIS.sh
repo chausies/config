@@ -32,6 +32,7 @@ sudo -H pip install cvxpy progressbar2 youtube-dl
 # Install LaTeX stuff (like pdflatex command)
 sudo apt-get install texlive
 sudo apt-get install texlive-latex-extra --no-install-recommends
+sudo apt-get install dvipng
 
 # Get custom configs
 cd ~
