@@ -33,6 +33,7 @@ sudo -H pip install cvxpy progressbar2 youtube-dl
 sudo apt-get install texlive
 sudo apt-get install texlive-latex-extra --no-install-recommends
 sudo apt-get install dvipng
+sudo apt-get install python-pygments
 
 # Get custom configs
 cd ~
