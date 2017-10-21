@@ -1,7 +1,7 @@
 # A bunch of custom quality of life things added for my ubuntu experience.
 
 # Shorten the prompt for the terminal
-alias shorten="PS1='\u:\W\$ '"
+alias shorten="PS1='\[\e[92m\]\u\[\e[m\]:\[\e[94m\]\W\[\e[m\]\\$ '"
 # Make octave open without a banner
 alias octave="octave -q --no-gui"
 # SSH into berkeley account (NO LONGER WORKING)
