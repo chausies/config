@@ -28,6 +28,7 @@ sudo -H pip install pydot
 sudo -H pip install keras
 # Install other python packages
 sudo -H pip install cvxpy progressbar2 youtube-dl
+sudo -H pip install Cython
 
 
 # Install LaTeX stuff (like pdflatex command)
