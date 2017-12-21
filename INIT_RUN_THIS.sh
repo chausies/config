@@ -12,6 +12,8 @@ sudo apt-get upgrade
 
 # Install useful packages
 sudo apt-get install dtrx # Do the right Xtraction (for unzipping files)
+sudo apt-get install ncdu # For viewing filesizes nicely
+sudo apt-get install tmate # For sharing terminal session
 sudo apt-get install cmake # useful for makefiles. Needed to install YouCompleteMe
 sudo apt-get install ffmpeg # important for a lot of video/image/audio things
 

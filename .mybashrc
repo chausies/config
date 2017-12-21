@@ -16,7 +16,7 @@ alias "cfe"="coffee -c"
 alias "filesize"="ncdu"
 # Shortcut for python doctest running
 alias "pytest"="python -m doctest"
-# Run pip with sudo and default python version
+# Run pip with sudo for default python version
 alias "pip"="sudo -H python -m pip"
 
 # Use .pythonrc file
