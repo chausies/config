@@ -18,6 +18,8 @@ alias "filesize"="ncdu"
 alias "pytest"="python -m doctest"
 # Run pip with sudo for default python version
 alias "pip"="sudo -H python -m pip"
+# Change volume to past 100%. E.g. CV 200%
+alias "CV"="pactl set-sink-volume 1"
 
 # Use .pythonrc file
 export PYTHONSTARTUP=~/.pythonrc
