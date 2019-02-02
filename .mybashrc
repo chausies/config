@@ -42,3 +42,26 @@ code.interact(local=locals())' >> ".$1.pyrunfile.deletethis"
   python ".$1.pyrunfile.deletethis"
   rm ".$1.pyrunfile.deletethis"
 }
+
+# Convert section of youtube video to webm for 4chan
+yt2webm () {
+  # Example usage:
+  # yt2webm https://www.youtube.com/watch?v=DAhmbuRlER0 3 7 prozd.webm
+  # -> This makes a webm of the vid from the 3 second mark to the 7 second mark
+  # use `yt2webm -h` for more details
+  if [ $# -eq 0 ] || [ "$1" = "-h" ] || [ "$1" = "-help" ] || [ "$1" = "--help" ]; then
+    echo "Usage:"
+    echo "'yt2webm youtube_video_url start_time end_time output_name.webm' : Convert section of youtube vid to webm. Times should be formatted as hh:mm:ss.xxx. This also works with many non-youtube urls!"
+    echo "'yt2webm youtube_video_url output_name.webm' : Convert entire youtube vid to webm"
+  fi
+  if [ $# -eq 2 ]; then
+    youtube-dl -o tmptmptmp.mp4 $1
+    ffmpeg -i -c:v libvpx -crf 4 -b:v 1500K -vf scale=640:-1 -an $2
+    rm tmptmptmp.mp4
+  fi
+  if [ $# -eq 4 ]; then
+    youtube-dl -o tmptmptmp.mp4 $1
+    ffmpeg -i tmptmptmp.mp4 -ss $2 -to $3 -c:v libvpx -crf 4 -b:v 1500K -vf scale=640:-1 -an $4
+    rm tmptmptmp.mp4
+  fi
+}
