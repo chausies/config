@@ -16,7 +16,7 @@ sudo apt -y install p7zip-full # 7zip for unzipping files. (7z e FILENAME)
 sudo apt -y install ncdu # For viewing filesizes nicely
 sudo apt -y install tmate # For sharing terminal session
 sudo apt -y install cmake # useful for makefiles. Needed to install YouCompleteMe
-sudo apt -y install mono-complete golang-go nodejs # Needed to install YouCompleteMe
+sudo apt -y install mono-complete golang-go nodejs npm # Needed to install YouCompleteMe
 sudo apt -y install ffmpeg # important for a lot of video/image/audio things
 
 # Update pip
