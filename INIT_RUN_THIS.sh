@@ -23,7 +23,7 @@ sudo -H pip3 install -U --upgrade pip
 # Install important python packages
 sudo -H pip3 install -U --upgrade matplotlib scipy
 sudo -H pip3 install -U --upgrade scikit-learn
-sudo -H pip3 install -U --upgrade pydot
+sudo -H pip3 install -U --upgrade pydot Pygments
 # Install other python packages
 sudo -H pip3 install -U --upgrade cvxpy tqdm youtube-dl
 sudo -H pip3 install -U --upgrade Cython
@@ -31,7 +31,6 @@ sudo -H pip3 install -U --upgrade Cython
 
 # Install LaTeX stuff (like pdflatex command)
 sudo apt -y install texlive-full
-sudo apt -y install python-pygments
 
 # Get custom configs
 cd ~
