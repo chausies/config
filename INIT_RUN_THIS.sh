@@ -38,6 +38,14 @@ cd ~
 git clone https://github.com/chausies/configs.git
 sh ~/configs/RUN_THIS.sh
 
+# Setup vim things
+# Remove old vim and install version with everything
+sudo apt -y purge vim
+sudo apt-get -y install vim-gtk3
+# MAKE SURE THAT `vim --version` has `+python3` and `+xterm_clipboard`
+# in it, else vim wasn't removed fully. You may need to run things like 
+# `sudo apt-get remove OTHER_VIM_DISTRO`
+
 # Get vim configs from my git and install the various plugins specified
 # there
 cd ~/
