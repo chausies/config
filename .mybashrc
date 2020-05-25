@@ -15,7 +15,7 @@ alias "filesize"="ncdu"
 # Shortcut for python doctest running
 alias "pytest"="python3 -m doctest"
 # Run pip with sudo for default python version
-alias "pip install"="sudo -H python3 -m pip install -U --upgrade"
+alias "pip_install"="sudo -H python3 -m pip install -U --upgrade"
 # Change volume to past 100%. E.g. CV 200%
 alias "change-vol"="pactl set-sink-volume 1"
 
