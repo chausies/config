@@ -10,7 +10,7 @@ cd ~
 sudo apt update
 sudo apt -y upgrade
 
-sudo apt -y install python3-pip
+sudo apt -y install python3-pip python3-tk
 # Install useful packages
 sudo apt -y install p7zip-full # 7zip for unzipping files. (7z e FILENAME)
 sudo apt -y install ncdu # For viewing filesizes nicely
