@@ -7,37 +7,30 @@
 cd ~
 
 # Update repositories and upgrade installed packages
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update
+sudo apt -y upgrade
 
+sudo apt -y install python3-pip
 # Install useful packages
-sudo apt-get install dtrx # Do the right Xtraction (for unzipping files)
-sudo apt-get install ncdu # For viewing filesizes nicely
-sudo apt-get install tmate # For sharing terminal session
-sudo apt-get install cmake # useful for makefiles. Needed to install YouCompleteMe
-sudo apt-get install ffmpeg # important for a lot of video/image/audio things
+sudo apt -y install dtrx # Do the right Xtraction (for unzipping files)
+sudo apt -y install ncdu # For viewing filesizes nicely
+sudo apt -y install tmate # For sharing terminal session
+sudo apt -y install cmake # useful for makefiles. Needed to install YouCompleteMe
+sudo apt -y install ffmpeg # important for a lot of video/image/audio things
 
-# install python2.7 and pip
-sudo apt-get install python-dev python-tk python-pip
 # Update pip
-sudo -H pip install --upgrade pip
+sudo -H pip3 install --upgrade pip
 # Install important python packages
-sudo -H pip install matplotlib scipy
-sudo -H pip install -U scikit-learn
-sudo -H pip install tensorflow
-sudo -H pip install h5py
-sudo -H pip install pydot
-sudo -H pip install keras
+sudo -H pip3 install -U --upgrade matplotlib scipy
+sudo -H pip3 install -U --upgrade scikit-learn
+sudo -H pip3 install -U --upgrade pydot
 # Install other python packages
-sudo -H pip install cvxpy progressbar2 youtube-dl
-sudo -H pip install Cython
+sudo -H pip install -U --upgrade cvxpy tqdm youtube-dl
+sudo -H pip install -U --upgrade Cython
 
 
 # Install LaTeX stuff (like pdflatex command)
-sudo apt-get install texlive
-sudo apt-get install texlive-latex-extra --no-install-recommends
-sudo apt-get install texlive-fonts-extra # Gives fonts like bbm for \mathbbm{1}
-sudo apt-get install dvipng
+sudo apt -y install texlive-full
 sudo apt-get install python-pygments
 
 # Get custom configs
@@ -48,7 +41,7 @@ sh ~/configs/RUN_THIS.sh
 # Setup vim things
 # Remove old vim and install version with everything
 sudo apt-get remove --purge vim
-sudo apt-get install vim-gtk-py2
+sudo apt-get install vim-gtk-py3
 # MAKE SURE THAT `vim --version` has `+python` in it, else vim wasn't
 # removed fully. You may need to run things like 
 # `sudo apt-get remove OTHER_VIM_DISTRO`
