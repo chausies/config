@@ -65,3 +65,6 @@ yt2webm () {
     rm tmptmptmp.mp4
   fi
 }
+
+# Make Xming work for WSL
+export DISPLAY=:0
