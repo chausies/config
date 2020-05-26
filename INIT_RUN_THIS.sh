@@ -10,7 +10,9 @@ cd ~
 sudo apt update
 sudo apt -y upgrade
 
-sudo apt -y install python3-pip python3-tk
+sudo apt -y install python3-pip
+# Needed for matplotlib
+sudo apt -y install python3-tk python3-gi-cairo
 # Install useful packages
 sudo apt -y install p7zip-full # 7zip for unzipping files. (7z e FILENAME)
 sudo apt -y install ncdu # For viewing filesizes nicely
