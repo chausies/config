@@ -18,6 +18,7 @@ sudo apt -y install p7zip-full # 7zip for unzipping files. (7z e FILENAME)
 sudo apt -y install ncdu # For viewing filesizes nicely
 sudo apt -y install tmate # For sharing terminal session
 sudo apt -y install cmake # useful for makefiles. Needed to install YouCompleteMe
+sudo apt -y install mono-complete golang-go nodejs npm # Needed to install YouCompleteMe
 sudo apt -y install ffmpeg # important for a lot of video/image/audio things
 
 # Update pip
@@ -38,6 +39,14 @@ sudo apt -y install texlive-full
 cd ~
 git clone https://github.com/chausies/configs.git
 sh ~/configs/RUN_THIS.sh
+
+# Setup vim things
+# Remove old vim and install version with everything
+sudo apt -y purge vim
+sudo apt-get -y install vim-gtk3
+# MAKE SURE THAT `vim --version` has `+python3` and `+xterm_clipboard`
+# in it, else vim wasn't removed fully. You may need to run things like 
+# `sudo apt-get remove OTHER_VIM_DISTRO`
 
 # Get vim configs from my git and install the various plugins specified
 # there
