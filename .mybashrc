@@ -68,3 +68,6 @@ yt2webm () {
 
 # Make Xming work for WSL
 export DISPLAY=:0
+
+# Ctrl+R does reverse search. This makes Ctrl+S forward search
+stty -ixon
