@@ -1,7 +1,7 @@
-ln -s ~/configs/.mybashrc ~/
-ln -s ~/configs/.inputrc ~/
-ln -s ~/configs/.pythonrc ~/
-ln -s ~/configs/.gitconfig ~/
+ln -s ~/myconfigs/.mybashrc ~/
+ln -s ~/myconfigs/.inputrc ~/
+ln -s ~/myconfigs/.pythonrc ~/
+ln -s ~/myconfigs/.gitconfig ~/
 
 # Get .bashrc to source .mybashrc if it isn't already
 if grep -Fxq "source ~/.mybashrc" ~/.bashrc

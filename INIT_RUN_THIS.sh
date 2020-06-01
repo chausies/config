@@ -36,9 +36,9 @@ sudo -H pip3 install -U --upgrade Cython
 sudo apt -y install texlive-full
 
 # Get custom configs
-cd ~
-git clone https://github.com/chausies/configs.git
-sh ~/configs/RUN_THIS.sh
+# cd ~
+# git clone https://github.com/chausies/myconfigs.git
+sh ~/myconfigs/RUN_THIS.sh
 
 # Setup vim things
 # Remove old vim and install version with everything
