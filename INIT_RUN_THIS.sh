@@ -5,6 +5,8 @@
 
 # go to home directory
 cd ~
+# Make temp directory if not already there
+mkdir -p temp
 
 # Update repositories and upgrade installed packages
 sudo apt update
@@ -36,7 +38,7 @@ sudo -H pip3 install -U --upgrade Cython
 sudo apt -y install texlive-full
 
 # Get custom configs
-# cd ~
+cd ~
 # git clone https://github.com/chausies/myconfigs.git
 sh ~/myconfigs/RUN_THIS.sh
 
