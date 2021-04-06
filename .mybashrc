@@ -69,5 +69,8 @@ yt2webm () {
 # Make Xming work for WSL
 export DISPLAY=:0
 
+# For VcXsrv (helps with matplotlib I think? @.@)
+export LIBGL_ALWAYS_INDIRECT=1
+
 # Ctrl+R does reverse search. This makes Ctrl+S forward search
 stty -ixon
