@@ -1,8 +1,8 @@
 [user]
-	email = chausies@berkeley.edu
+	email = chausies7@gmail.com
 	name = chausies
 [credential]
-	helper = cache --timeout=10800
+	helper = cache
 [color]
 	ui = true
 [alias]
