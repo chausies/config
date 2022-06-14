@@ -67,7 +67,7 @@ yt2webm () {
 }
 
 # Make Xming work for WSL
-export DISPLAY=:0
+export DISPLAY=$(ip route list default | awk '{print $3}'):0
 
 # For VcXsrv (helps with matplotlib I think? @.@)
 export LIBGL_ALWAYS_INDIRECT=1
